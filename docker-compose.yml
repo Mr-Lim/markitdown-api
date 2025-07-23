@@ -4,7 +4,7 @@ networks:
     name: traefik
     external: true
 services:
-  ddclient:
+  markitdown-api:
     image: markitdown-api:latest
     container_name: markitdown-api
     networks: ['demo']
