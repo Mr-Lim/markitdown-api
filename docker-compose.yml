@@ -1,0 +1,14 @@
+---
+networks:
+  demo:
+    name: traefik
+    external: true
+services:
+  ddclient:
+    image: markitdown-api:latest
+    container_name: markitdown-api
+    networks: ['demo']
+    hostname: markitdown-api
+    ports:
+    - 8490:8490
+    restart: always
