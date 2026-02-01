@@ -5,7 +5,8 @@ networks:
     external: true
 services:
   markitdown-api:
-    image: markitdown-api:latest
+    build:
+      context: .
     container_name: markitdown-api
     networks: ['demo']
     hostname: markitdown-api
